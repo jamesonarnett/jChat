@@ -39,12 +39,22 @@
   cursor: pointer;
 }
 
+.loading {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  background: transparent;
 }
 
 /* Login Page */
+
+.huge {
+  font-size: 60px;
+}
 
 #loginPage {
   background-image: linear-gradient(#40a9ff, #096dd9);
