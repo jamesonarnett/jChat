@@ -50,7 +50,7 @@ const Chats = () => {
 
         getFile(user.photoURL).then((avatar) => {
           formData.append("avatar", avatar, avatar.name);
-
+          console.log(user);
           axios
             .post("https://api.chatengine.io/users/", formData, {
               headers: {

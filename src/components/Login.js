@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  GoogleOutlined,
-  FacebookOutlined,
-  TwitterOutlined,
-} from "@ant-design/icons";
+import { GoogleOutlined } from "@ant-design/icons";
 import "firebase/app";
 
 import { auth } from "../firebase";
@@ -24,23 +20,11 @@ const Login = () => {
           <GoogleOutlined /> Sign in with Google
         </div>
         <br /> <br />
-        <div
-          className="loginButton facebook"
-          onClick={() => {
-            auth.signInWithRedirect(new firebase.auth.TwitterAuthProvider());
-          }}
-        >
-          <TwitterOutlined /> Sign in with Twitter
-        </div>
         <br /> <br />
-        <div
-          className="loginButton facebook"
-          onClick={() => {
-            alert("Im sure you're a great person. So quit using Facebook.");
-          }}
-        >
-          <FacebookOutlined /> Sign in with FaceBook
-        </div>
+        <p className="small">
+          Brb with full backend, auth, and no ChatEngine. Until then... firebase
+          is pretty sweet.
+        </p>
       </div>
     </div>
   );
